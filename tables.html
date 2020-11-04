@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <div style="padding-left: 12%; margin-top: 3%;">
+        <h1>Table Discussions</h1>
+
+        <h3>Simple table</h3>
+        <!--
+            table
+            total rows (tr)
+            tabular header (th)
+            tabular data (td)
+        -->
+        <table border="1">
+            
+            <tr>
+                <th>ADM NO</th>
+                <th>NAME</th>
+            </tr>
+            <tr>
+                <td>2345</td>
+                <td>3456</td>
+            </tr>
+            <tr>
+                <td>JAck</td>
+                <td>Johny</td>
+                <td>Daryl</td>
+            </tr>
+        </table>
+
+<br> <br>
+     <h3>Spanning multiple rows or columns</h3>
+     <table border="2">
+         <caption>Car brands and models</caption>
+         <colgroup span="2"></colgroup>
+         <tr>
+             <td></td>
+             <th>Reg No</th>
+             <th>Model</th>
+             <th>Brand</th>
+         </tr>
+         <tr>
+             
+             <td>kce 390</td>
+             <td>Imprezza</td>
+             <td>Subaru</td>
+         </tr>
+         <tr>
+            <td>kct 345 r</td>
+            <td colspan="2">Toyota Corola</td>
+            
+         </tr>
+         <tr>
+             <th>row heading</th>
+            <td>kba 879 j</td>
+            <td rowspan="2" colspan="2">X6 BMW</td>
+            
+             
+         </tr>
+         <tr>
+             <td>NA</td>
+         </tr>
+     </table>
+
+     <br><br>
+     
+     <h3>Table with thead, tbody, tfoot and caption </h3>
+
+         <table border="1">
+             <!--Caption is the first child of table element-->
+             <caption>My beautiful table</caption>
+             <thead>
+                 <!--thead follows after caption-->
+                 <tr>
+                    
+                     <th scope="col">TSC No</th>
+                     <th scope="col">Name</th>
+                     <td></td>
+                 </tr>
+             </thead>
+            <!-- tbody follows thead -->
+             <tbody>
+                 <tr>
+                     <td>345678</td>
+                     <td>Jamogo Okari</td>
+                     <th scope="row">row heading</th>
+                     
+
+                 </tr>
+                 <tr>
+                     <td>347589</td>
+                     <td>Jahson Maina</td>
+                 </tr>
+
+             </tbody>
+        <!--footer can be placed anywhere regardless of where its placed in
+        html it will always be displayed at the bottom of the page in a web browser -->
+             <tfoot>
+                 <tr>
+                     <td>&copy; 2020</td>
+                     <td>by Magpiny </td>
+                 </tr>
+             </tfoot>
+         </table>
+
+    </div>
+</body>
+</html>
