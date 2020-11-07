@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="padding-left: 10%; display: block; background-color: grey; color: crimson; font-size: 18px;">
+        <h1 style="color: blue;">In this segment we're discussing Input control elements</h1>
+        <h3>Text</h3>
+        <caption>Input field</caption>
+        <input type="text" autofocus size="30">
+
+        <br><br>
+        <h3>checkbox</h3>
+        <!-- 
+            Checkboxes are usually standalone and is used for a single binary option
+            Yes/No
+            Checkboxes are independent meaning one can select as many checkboxes as available for selection 
+        -->
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox">
+
+        <br><br>
+        <h3>Radio buttons</h3>
+        <!--
+            Radio buttons usually come in groups identified using the same name attribute
+            Selection of radio buttons are mutually exclusive 
+            i.e one may only select one radio button at a time from a group of radio buttons
+        -->
+        <input type="radio" name="color" value="#FFF">
+        <input type="radio" name="color" value="#F00" checked>
+        <input type="radio" name="color" value="#000">
+
+        <br><br>
+        <!--Button groups-->
+        <h3>Button group : fieldset & legend</h3>
+        <fieldset style="width:50%;">
+            <legend>Button groups</legend>
+
+            <label>
+                <input type="radio" name="color" value="#FFF">
+            black
+            </label>
+            <p>
+                <input type="radio" name="color" value="#F00" checked>
+                <label for="red">Red</label>
+            </p>
+            
+            <p>
+                <input type="radio" name="color" value="#000">
+                <label for="white">White</label>
+            </p>
+       
+        </fieldset>
+
+        <h3>Input Validation</h3>
+        <input type="text" name="some-text"  minlength="5" maxlength="30">
+
+        <br>
+        <h3>Specifying range </h3>
+        <p>
+            Marks :<input type="number" size="30" min="1" max="100" name="marks">
+        </p>
+        <p>
+            Feedback : <input type="range" name="feedback" min="1" max="10">
+        </p>
+        <p>
+            Password : <input type="password" pattern="\d*" title="Numbers please!!" required>
+        </p>
+
+        <h3>Accept File type</h3>
+        <input type="file" accept="image/*"title="only images needed">
+
+        <h3>Input types</h3>
+        <h5>Search</h5>
+        <input type="search" placeholder=" &#128269; search" name="googlesearch" >
+        <h5>Week</h5>
+        <input type="week">
+        <h5>Url</h5>
+        <input type="url" title="Enter full url">
+        <h5>DateTime-Local</h5>
+        <input type="datetime-local">
+        <h5>Month</h5>
+        <input type="month">
+        <h5>time</h5>
+        <input type="time">
+        <h5>Telephon</h5>
+        <input type="tel" placeholder="&phone; 0701987730" disabled>
+
+
+
+
+        <br>
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        <footer>
+            Magpiny&trade;
+        </footer>
+    </div>
+</body>
+</html>
+
